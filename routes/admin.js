@@ -12,8 +12,10 @@ router.get('/admin/appointment/userData', adminController.getAll);
 
 router.post('/admin/appointment/userData', adminController.create);
 
-router.post('/admin/appointment/userData/:userId', adminController.addComment);
+router.post('/admin/appointment/userData/:postId/comments', adminController.addComment);
 
-router.delete('/admin/appointment/userData/:userId', adminController.delete);
+router.get('/admin/appointment/userData/:postId/comments', adminController.getCommentsForBlog);
+
+router.delete('/admin/appointment/userData/:postId/comments/:commentId', adminController.delete);
 
 module.exports = router;

@@ -4,26 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-</head>
+    <link rel="stylesheet" href="style.css">
+    </head>
 <body>
 
-    <h1>Create a New Blog Post</h1>
+  <body>
+    <div id="left">
+        <h1>Create a New Blog Post</h1>
+        <form id="blogForm">
+            <label for="title">Blog Title:</label><br>
+            <input type="text" id="title" name="title" required><br><br>
+            <label for="author">Author:</label><br>
+            <input type="text" id="author" name="author" required><br><br>
+            <label for="content">Blog Content:</label><br>
+            <textarea id="content" name="content" rows="10" cols="50" required></textarea><br><br>
+            <input type="submit" value="Submit">
+        </form>
+    </div>
+
+    <div id="right">
+        <ul id="blogslist"></ul>
+    </div>
     
-    <form  id="blogForm">
-      <label for="title">Blog Title:</label><br>
-      <input type="text" id="title" name="title" required><br><br>
-      
-      <label for="author">Author:</label><br>
-      <input type="text" id="author" name="author" required><br><br>
-      
-      <label for="content">Blog Content:</label><br>
-      <textarea id="content" name="content" rows="6" cols="50" required></textarea><br><br>
-      
-      <input type="submit" value="Submit">
-    </form>
-    <ul id="blogslist"></ul>
-    
-    </body>
-    <script src = "https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
     <script src="index.js"></script>
+</body>
     </html>

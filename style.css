@@ -1,0 +1,204 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin: 0;
+    padding: 0;
+}
+
+#left {
+    width: 40%;
+    padding: 20px;
+}
+
+#right {
+    width: 50%;
+    padding: 20px;
+    color: #333; /* Dark gray text color */
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+li {
+    margin-bottom: 20px; /* Space between blog posts */
+    padding: 20px;
+    border: 1px solid #ccc; /* Light gray border */
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+    background-color: #fff; /* White background for blog posts */
+}
+
+li:nth-child(even) {
+    background-color: #f9f9f9; /* Light gray background for even numbered blog posts */
+}
+
+li:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    margin-top: 0;
+}
+
+.add {
+    background-color: #007bff; /* Blue button color */
+    color: #fff; /* White text color */
+    padding: 8px 16px; /* Padding for button */
+    font-size: 14px; /* Font size */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.add:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+
+.hidden {
+    display: none;
+  }
+
+  /* Apply blue background to the blog form */
+  #left {
+    background-color: lightblue; /* Adjusted the background color */
+    padding: 20px;
+  }
+  
+  /* Apply white background to text input and textarea */
+  input[type="text"],
+  textarea {
+    background-color: white;
+    color: black; /* Text color */
+    border: 1px solid black; /* Add borders for better visual separation */
+    padding: 5px; /* Add some padding for better spacing */
+    margin-bottom: 10px; /* Add margin at the bottom for spacing between elements */
+  }
+  
+  /* Apply orange background and black text color to the submit button */
+  input[type="submit"] {
+    background-color: orange;
+    color: black;
+    border: none; /* Remove default button border */
+    padding: 10px 20px; /* Add padding to make the button more clickable */
+    cursor: pointer; /* Show pointer cursor on hover */
+  }
+  
+  /* Style for the blog title and author labels */
+  label {
+    color: black; /* Set label text color to white */
+    font-weight: bold; /* Make the label text bold */
+  }
+  
+  /* Style for the blog content textarea */
+  textarea {
+    width: 100%; /* Make the textarea full width */
+  }
+  
+  /* Optional: Add some styles for the form layout */
+  #left {
+    max-width: 500px; /* Limit the width of the form container */
+    margin: 0 auto; /* Center the form horizontally */
+  }
+
+  #blogslist li {
+    background-color: lightblue;
+    color: black; /* Set text color to white for better contrast */
+    padding: 20px;
+    margin-bottom: 20px; /* Add margin at the bottom for spacing between posts */
+    position: relative; /* Position the toggle button relative to the post */
+  }
+  
+  /* Style for the blog title */
+  #blogslist li h2 {
+    margin-bottom: 10px; /* Add margin at the bottom of the title for spacing */
+  }
+  
+  /* Position the toggle button to the right corner */
+  .toggle {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+  }
+  
+  /* Add gap between 2 blog posts */
+  #blogslist li + li {
+    border-top: 1px solid white; /* Add border at the top of each post except the first one */
+    padding-top: 20px; /* Add padding at the top for spacing */
+  }
+
+  input[type="submit"],
+.toggle,
+.addcomment {
+  background-color: orange;
+  color: black; /* Set text color to black for better contrast */
+  border: none; /* Remove any borders */
+  padding: 5px 10px; /* Add padding to make the buttons clickable */
+  cursor: pointer; /* Show pointer cursor on hover */
+}
+
+.comment-section button {
+    background-color: orange;
+    color: black; /* Set text color to black for better contrast */
+    padding: 6px 12px; /* Padding for button */
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .comment-section button:hover {
+    background-color: darkorange; /* Darker orange on hover */
+  }
+
+  .comment-section {
+    color: black; /* Dark gray text color */
+    padding: 10px;
+    border-radius: 3px;
+    margin-top: 10px; /* Space between blog content and comments */
+  }
+
+  .comment-section button.addcomment {
+    float: right;
+  }
+  .comment-section textarea {
+    width: calc(100% - 120px); /* Reduce the width */
+    max-width: 300px; /* Set maximum width */
+    height: 20px; /* Set the height */
+  }
+
+  .comment {
+    /* Ensure relative positioning */
+    position: relative;
+  }
+  
+  .comment {
+    display: flex;
+    align-items: center; /* Align items vertically */
+  }
+  
+  /* Style the comment text */
+  /* Add a border bottom to separate comments */
+
+  
+  /* Style the comment text */
+  .comment p {
+    /* Ensure text does not wrap */
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis; /* Show ellipsis for overflow */
+    flex-grow: 1; /* Allow comment text to grow to fill available space */
+  }
+  
+  /* Position delete button on the right side */
+  .delete-comment {
+    margin-left: auto; /* Push delete button to the right */
+    margin-right: 10px; /* Add some margin */
+  }
+  
+ 
